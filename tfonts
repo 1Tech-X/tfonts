@@ -1,0 +1,18 @@
+#!/data/data/com.termux/files/usr/bin/bash
+option="${1}" 
+case ${option} in 
+   -s) cd $PREFIX/share/tfonts
+	   bash tfonts.sh
+      ;; 
+   -un) rm ~/.termux/font.ttf > /dev/null  || { printf "\033[1;91m Font file already deleted\n"; } 
+	   rm -rf $PREFIX/share/tfonts > /dev/null 
+	   rm $PREFIX/bin/tfonts > /dev/null 
+	   sleep 1
+	   echo ""
+	   printf "\033[92m tfonts Uninstall successfully\033[0m\n"
+      ;; 
+   *)  
+      printf "`basename ${0}`: usage:[ \033[92m-s\033[1;0m to start tfonts ] | [ \033[91m-un\033[1;0m to uninstall tfonts ]\n"
+      exit 1 # Command to come out of the program with status 1
+      ;; 
+esac 
