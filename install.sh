@@ -46,7 +46,9 @@ tfonts () {
 		echo ""
 		printf "${green}tfonts installed${reset}\n"
 	else
-		cp tfonts $PREFIX/bin
+		cd $PREFIX/bin
+		curl -LO https://raw.githubusercontent.com/1Tech-X/tfonts/master/tfonts
+		chmod +x tfonts
 		echo ""
 		printf "${green}start tfonts by using command ${red}tfonsts -s ${reset}\n"
 	fi
