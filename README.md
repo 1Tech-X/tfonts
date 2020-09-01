@@ -4,10 +4,15 @@ Stylish fonts for termux
 <img src='https://github.com/1Tech-X/tfonts/blob/master/img/20200901_141109.jpg' height='100px'>
 
 # Installation
+<h3>curl -LO https://raw.githubusercontent.com/1Tech-X/tfonts/master/install.sh</h3>
+
+<h3>bash install.sh</h3>
 
 # Usage
+<h3>tfonts -s</h3>
 
 # Uninstall tfonts
+<h3>tfonts -un</h3>
 
 <h2>Fonts list</h2>
 
@@ -63,3 +68,9 @@ Stylish fonts for termux
   <li><img src='https://github.com/1Tech-X/tfonts/blob/master/img/49.jpg' height='90px'></li>
   <li><img src='https://github.com/1Tech-X/tfonts/blob/master/img/50.jpg' height='90px'></li>
   </ol>
+  
+  # Subscribe my Youtube cahnnel
+  <p>https://youtube.com/Tech-X</p>
+  
+  # Fonts Download from
+  <h4>www.fontsaddict.com</h4>
